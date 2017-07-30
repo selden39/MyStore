@@ -1,9 +1,9 @@
 package ru.mystore.staff;
 
-public class Seller {
+public class Stuff {
     private String fullName;
 
-    public Seller(String fullName) {
+    public Stuff(String fullName) {
         this.fullName = fullName;
     }
 
@@ -13,15 +13,5 @@ public class Seller {
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
-    }
-
-    private void giveInfoForAccountant (){
-
-    }
-    private void callStorekeeper (){
-
-    }
-    private void sellProduct (){
-
     }
 }

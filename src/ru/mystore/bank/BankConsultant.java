@@ -1,22 +1,15 @@
 package ru.mystore.bank;
 
-public class BankConsultant {
-    private String fullName;
+import ru.mystore.staff.Stuff;
+
+public class BankConsultant extends Stuff{
+    public BankConsultant(String fullName) {
+        super(fullName);
+    }
+
     private Bank sberbank = new Bank("Sberbank");
     private Bank vtb24 = new Bank("VTB24");
     private Bank uralsib = new Bank("Uralsib");
-
-    public BankConsultant(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
 
     public void takeInfoForCredit(){
         requestForCredit();
